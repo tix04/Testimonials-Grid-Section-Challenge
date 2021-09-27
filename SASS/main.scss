@@ -112,29 +112,7 @@ main {
         }
     }
 }
-/*.testimonial {
-    &:first-child {
-        grid-area: daniel;
-    }
-    &:nth-child(2) {
-        grid-area: jonathan;
-    }
-    &:nth-child(3) {
-        grid-area: janette;
-        @media screen and (min-width: 950px) {
-            width: 80%;
-        }
-    }
-    &:nth-child(4) {
-        grid-area: patrick;
-    }
-    &:nth-child(5) {
-        grid-area: kira;
-        @media screen and (min-width: 950px) {
-            width: 73%;
-        }
-    }
-}*/
+
 .user {
     display: flex;
     margin-bottom: 1.5rem;
