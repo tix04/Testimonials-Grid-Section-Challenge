@@ -36,6 +36,7 @@ main {
     grid-row-gap: 2rem;
     @media screen and (min-width: 950px) {
         width: 80%;
+        max-width: 1150px;
         grid-column-gap: 2rem;
         grid-template-areas: 
         "daniel daniel daniel jonathan kira"
@@ -86,7 +87,32 @@ main {
     }
 }
 
-.testimonial {
+@media screen and (min-width: 950px) {
+    .testimonial {
+        &:first-child {
+            grid-area: daniel;
+        }
+        &:nth-child(2) {
+            grid-area: jonathan;
+        }
+        &:nth-child(3) {
+            grid-area: janette;
+            @media screen and (min-width: 950px) {
+                width: 80%;
+            }
+        }
+        &:nth-child(4) {
+            grid-area: patrick;
+        }
+        &:nth-child(5) {
+            grid-area: kira;
+            @media screen and (min-width: 950px) {
+                width: 73%;
+            }
+        }
+    }
+}
+/*.testimonial {
     &:first-child {
         grid-area: daniel;
     }
@@ -108,7 +134,7 @@ main {
             width: 73%;
         }
     }
-}
+}*/
 .user {
     display: flex;
     margin-bottom: 1.5rem;
